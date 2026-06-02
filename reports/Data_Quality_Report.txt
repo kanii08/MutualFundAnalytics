@@ -1,0 +1,42 @@
+DAY 1 DATA QUALITY REPORT
+
+Datasets Loaded: 10
+
+Dataset Summary
+
+1. Fund Master - 40 rows, 15 columns
+2. NAV History - 46000 rows, 3 columns
+3. AUM by Fund House - 90 rows, 5 columns
+4. Monthly SIP Inflows - 48 rows, 6 columns
+5. Category Inflows - 144 rows, 3 columns
+6. Industry Folio Count - 21 rows, 6 columns
+7. Scheme Performance - 40 rows, 19 columns
+8. Investor Transactions - 32778 rows, 13 columns
+9. Portfolio Holdings - 322 rows, 8 columns
+10. Benchmark Indices - 8050 rows, 3 columns
+
+Fund Houses Identified: 10
+
+Categories:
+- Equity
+- Debt
+
+Risk Categories:
+- Low
+- Moderate
+- Moderately High
+- High
+- Very High
+
+AMFI Validation:
+Total Fund Master Codes: 40
+Total NAV Codes: 40
+Missing Codes: 0
+
+Data Quality Findings:
+- Date columns stored as string datatype
+- Some missing values found in yoy_growth_pct
+- Category standardization may be required
+
+Overall Status:
+Data ingestion successful.
