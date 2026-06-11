@@ -1,11 +1,16 @@
 import pandas as pd
 
-risk = input("Enter Risk (Low/Moderate/High): ")
+risk = input(
+    "Enter Risk (Low/Moderate/High): "
+)
 
-df = pd.read_csv("data/processed/scheme_performance_clean.csv")
+df = pd.read_csv(
+    "data/processed/scheme_performance_clean.csv"
+)
 
 filtered = df[
-    df["risk_grade"].str.contains(
+    df["risk_grade"]
+    .str.contains(
         risk,
         case=False,
         na=False
